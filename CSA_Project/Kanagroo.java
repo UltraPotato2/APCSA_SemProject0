@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -14,6 +15,15 @@ public class Kanagroo extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        move();
     }    
+    public void move()
+    {
+        int y = getY();
+        int x = getX();
+        if(Greenfoot.isKeyDown("w"))y--;
+        if(Greenfoot.isKeyDown("a"))x--;
+        if(Greenfoot.isKeyDown("d"))x++;
+        setLocation(x,y);
+    }
 }
