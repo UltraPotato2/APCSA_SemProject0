@@ -3,9 +3,15 @@ class.Kanagroo.image=kangaroo.png
 class.MyWorld.image=sand.jpg
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=1735
 editor.fx.0.y=442
 height=573
+=======
+editor.fx.0.x=899
+editor.fx.0.y=156
+height=585
+>>>>>>> 8201cc84c46b0a6527e8f3722818cf6425af045a
 package.numDependencies=0
 package.numTargets=2
 project.charset=UTF-8
@@ -39,5 +45,10 @@ target2.y=0
 version=3.0.0
 width=823
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=930
 yPosition=495
+=======
+xPosition=583
+yPosition=178
+>>>>>>> 8201cc84c46b0a6527e8f3722818cf6425af045a
