@@ -26,10 +26,4 @@ public class Kanagroo extends WorldObject
         if(Greenfoot.isKeyDown("d"))x++;
         setLocation(x,y);
     }
-    public void pushBack()
-    {
-        int y = getY();
-        int x = getX();
-        
-    }
 }
