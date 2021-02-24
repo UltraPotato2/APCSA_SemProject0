@@ -28,7 +28,16 @@ public class MyWorld extends World
     {
         Kanagroo kanagroo = new Kanagroo();
         addObject(kanagroo,300,350);
-        Car car1 = new Car();
+        Car1 car1 = new Car1();
         addObject(car1, 0, 200);
+    }
+    
+    private void create(int type, int y)
+    {
+        if (type == 1)
+        {
+            Car1 car1 = new Car1();
+            addObject(car1, 0, y);
+        }
     }
 }

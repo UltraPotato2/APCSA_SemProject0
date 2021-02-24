@@ -1,24 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Car here.
+ * Write a description of class Car4 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Car extends WorldObject
+public class Car4 extends WorldObject
 {
     /**
-     * Act - do whatever the Car wants to do. This method is called whenever
+     * Act - do whatever the Car4 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        move(1);
-        if (isAtEdge() )
-        {
-            turn(180);
-            move(1);
-        }
+        // Add your action code here.
     }    
 }
