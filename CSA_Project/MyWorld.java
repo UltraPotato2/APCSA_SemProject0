@@ -28,11 +28,11 @@ public class MyWorld extends World
     {
         Kanagroo kanagroo = new Kanagroo();
         addObject(kanagroo,300,350);
-        int y = 100;
-        for (int x = 0; x < 10; x++)
+        int y = 300;
+        for (int x = 0; x < 9; x++)
         {
-            create((int)(Math.random() * 3), y);
-            y += 30;
+            create((int)(Math.random() * 4), y);
+            y -= 35;
         }
     }
     
