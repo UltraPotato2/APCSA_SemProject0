@@ -28,16 +28,35 @@ public class MyWorld extends World
     {
         Kanagroo kanagroo = new Kanagroo();
         addObject(kanagroo,300,350);
-        Car1 car1 = new Car1();
-        addObject(car1, 0, 200);
+        int y = 100;
+        for (int x = 0; x < 10; x++)
+        {
+            create((int)(Math.random() * 3), y);
+            y += 30;
+        }
     }
     
     private void create(int type, int y)
     {
-        if (type == 1)
+        if (type == 0)
         {
             Car1 car1 = new Car1();
             addObject(car1, 0, y);
+        }
+        if (type == 1)
+        {
+            Car2 car2 = new Car2();
+            addObject(car2, 0, y);
+        }
+        if (type == 2)
+        {
+            Car3 car3 = new Car3();
+            addObject(car3, 0, y);
+        }
+        if (type == 3)
+        {
+            Car4 car4 = new Car4();
+            addObject(car4, 0, y);
         }
     }
 }
