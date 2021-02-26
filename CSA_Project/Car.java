@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Car here.
+ * Write a description of class Car2 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Car1 extends WorldObject
+public class Car extends WorldObject
 {
     /**
-     * Act - do whatever the Car wants to do. This method is called whenever
+     * Act - do whatever the Car2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
@@ -20,5 +20,8 @@ public class Car1 extends WorldObject
             turn(180);
             move(1);
         }
-    }    
+    }
+    public Car(){
+        getImageName("car03");
+    }
 }

@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Write a description of class MyWorld here.
  * 
@@ -8,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
         prepare();
     }
 
@@ -38,25 +38,11 @@ public class MyWorld extends World
     
     private void create(int type, int y)
     {
+        
         if (type == 0)
         {
-            Car1 car1 = new Car1();
-            addObject(car1, 0, y);
-        }
-        if (type == 1)
-        {
-            Car2 car2 = new Car2();
-            addObject(car2, 0, y);
-        }
-        if (type == 2)
-        {
-            Car3 car3 = new Car3();
-            addObject(car3, 0, y);
-        }
-        if (type == 3)
-        {
-            Car4 car4 = new Car4();
-            addObject(car4, 0, y);
+            Car car = new Car();
+            addObject(car, 0, y);
         }
     }
 }
