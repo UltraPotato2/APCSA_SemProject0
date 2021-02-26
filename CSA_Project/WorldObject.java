@@ -18,15 +18,15 @@ public class WorldObject extends Actor
         // Add your action code here.
     }
     
-    public String getImageName(String name){
+    public String getImageName(String name){   //simplifies image names
        return ("images/"+name+".png");
     }
     
-    public int randomInt(int min, int max){
+    public int randomInt(int min, int max){       //gets a random integer
         return ((int)(Math.random()*(max-min+1)+min));
     }
     
-    public String pickObstacles(int arrX, int arrY){
+    public String pickObstacles(int arrX, int arrY){       //returns desired string from obstacles array and concatinates it to create the file directory 
         return getImageName(obstacles[arrX][arrY]);
     }
 }

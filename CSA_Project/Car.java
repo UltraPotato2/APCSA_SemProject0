@@ -12,7 +12,7 @@ public class Car extends WorldObject
      * Act - do whatever the Car2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
+    public void act() //how the car reacts with world
     {
         move(1);
         if (isAtEdge() )
@@ -21,7 +21,7 @@ public class Car extends WorldObject
         }
     }
     
-    public Car(){
-        setImage(pickObstacles(0,randomInt(0,2)));
+    public Car(){       //initialziation
+        setImage(pickObstacles(0,randomInt(0,2)));  //set image-> pick obstacle in the car section of obstacles array
     }
 }

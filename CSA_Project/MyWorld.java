@@ -36,7 +36,7 @@ public class MyWorld extends World
         }
     }
     
-    private void create(int type, int y)
+    private void create(int type, int y) //creates a car object
     {
         if (type == 0)
         {
@@ -44,7 +44,8 @@ public class MyWorld extends World
             addObject(car, 0, y);
         }
     }
-    public int randomInt(int min, int max){
-        return ((int)(Math.random()*(max-min+1)));
+    
+    public int randomInt(int min, int max){          //choses random int between min and max inclusive
+        return ((int)(Math.random()*(max-min+1)+min));
     }
 }
