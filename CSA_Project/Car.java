@@ -18,10 +18,10 @@ public class Car extends WorldObject
         if (isAtEdge() )
         {
             turn(180);
-            move(1);
         }
     }
+    
     public Car(){
-        getImageName("car03");
+        setImage(pickObstacles(0,randomInt(0,2)));
     }
 }

@@ -8,4 +8,6 @@ comment2.params=name
 comment2.target=java.lang.String\ getImageName(java.lang.String)
 comment3.params=min\ max
 comment3.target=int\ randomInt(int,\ int)
-numComments=4
+comment4.params=arrX\ arrY
+comment4.target=java.lang.String\ pickObstacles(int,\ int)
+numComments=5
