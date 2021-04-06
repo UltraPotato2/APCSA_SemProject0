@@ -19,6 +19,12 @@ public class Car extends WorldObject
         {
             turn(180);
         }
+        
+        Actor a = this.getOneIntersectingObject(Kanagroo.class);
+        if(a!=null)
+        {
+            this.getWorld().removeObject(a);
+        }
     }
     
     public Car(){       //initialziation
