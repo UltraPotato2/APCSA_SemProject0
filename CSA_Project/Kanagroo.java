@@ -9,6 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Kanagroo extends WorldObject
 {
+    boolean upPressed = false;
+    boolean downPressed = false;
+    boolean rightPressed = false;
+    boolean leftPressed  = false;
+    
+    int points = 0;
     /**
      * Act - do whatever the Kanagroo_0 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,13 +23,19 @@ public class Kanagroo extends WorldObject
     {
         move();
     }    
+    public int getPoints()
+    {
+        return points;
+    }
     public void move()
     {
         int y = getY();
         int x = getX();
-        if(Greenfoot.isKeyDown("w"))y--;
-        if(Greenfoot.isKeyDown("a"))x--;
-        if(Greenfoot.isKeyDown("d"))x++;
+        String key = Greenfoot.getKey();
+        if(key != null && key.equals("w")) y -= 30;
+        if(key != null && key.equals("a"))x -= 30;
+        if(key != null && key.equals("d"))x += 30;
+        if(key != null && key.equals("s"))y += 30;
         setLocation(x,y);
     }
 }
