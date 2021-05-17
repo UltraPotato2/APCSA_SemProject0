@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 1000, 1);
+        super(600, 800, 1);
         prepare();
     }
 
@@ -28,11 +28,11 @@ public class MyWorld extends World
     {
         Kanagroo kanagroo = new Kanagroo();
         addObject(kanagroo,300, 975);
-        int y = 900;
-        for (int x = 0; x < 20; x++)
+        int y = 700;
+        for (int x = 0; x <11; x++)
         {
             create((int)(Math.random() * 4), y);
-            y -= 45;
+            y -= 60;
         }
     }
     
@@ -40,7 +40,7 @@ public class MyWorld extends World
     {
         
             Car car = new Car(type);
-            int leftRight = (int)(Math.random() * 2) * 600;
+            int leftRight = (int)(Math.random() * 2) * 580;
             addObject(car, leftRight, y);
         
     }
