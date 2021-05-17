@@ -38,12 +38,11 @@ public class MyWorld extends World
     
     private void create(int type, int y) //creates a car object
     {
-        if (type == 0)
-        {
-            Car car = new Car();
+        
+            Car car = new Car(type);
             int leftRight = (int)(Math.random() * 2) * 600;
             addObject(car, leftRight, y);
-        }
+        
     }
     
     public int randomInt(int min, int max){          //choses random int between min and max inclusive

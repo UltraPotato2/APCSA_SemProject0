@@ -29,7 +29,7 @@ public class Car extends WorldObject
         }
     }
     
-    public Car(){       //initialziation
+    public Car(int x){       //initialziation
         setImage(pickObstacles(0,randomInt(0,2)));  //set image-> pick obstacle in the car section of obstacles array
     }
 }
