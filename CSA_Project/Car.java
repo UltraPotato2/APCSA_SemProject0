@@ -23,7 +23,9 @@ public class Car extends WorldObject
         Actor a = this.getOneIntersectingObject(Kanagroo.class);
         if(a!=null)
         {
-            this.getWorld().removeObject(a);
+            //change to reset game or go to a launch screen
+            
+            Greenfoot.setWorld(new MyWorld());
         }
     }
     
