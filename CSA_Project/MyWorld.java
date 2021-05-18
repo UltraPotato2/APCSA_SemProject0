@@ -29,10 +29,14 @@ public class MyWorld extends World
         Kanagroo kanagroo = new Kanagroo();
         addObject(kanagroo,300, 975);
         int y = 700;
-        for (int x = 0; x <11; x++)
+        while(y >= 0)
         {
-            create((int)(Math.random() * 4), y);
-            y -= 60;
+            if(randomInt(0,2) > 0){
+                create((int)(Math.random() * 4), y);
+                y-=120;
+            }else{
+                y -= 60;
+            }    
         }
     }
     
