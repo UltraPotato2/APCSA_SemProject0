@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Car extends WorldObject
+public class Enemy extends WorldObject
 {
     /**
      * Act - do whatever the Car2 wants to do. This method is called whenever
@@ -30,8 +30,8 @@ public class Car extends WorldObject
         }
     }
     
-    public Car(int x){       //initialziation
-        setImage(pickObstacles(0,randomInt(0,2)));  //set image-> pick obstacle in the car section of obstacles array
-        moveSpeed = x + 1;
+    public Enemy(int speed){       //initialziation
+        setImage(pickObstacles((randomInt(1,10)/10),randomInt(0,2)));  //set image-> pick obstacle in the car section of obstacles array. 1/10 chance of rare enemy
+        moveSpeed = speed + 1;
     }
 }

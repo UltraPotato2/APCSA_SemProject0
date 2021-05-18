@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class WorldObject extends Actor
 {
-    private String[][] obstacles = {{"car01","car02","car03"}, {}};
+    private String[][] obstacles = {{"car01","car02","car03"}, {"rocket","ambulance","ambulance"}};  //intentional double chance for ambulance
     /**
      * Act - do whatever the WorldObject wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

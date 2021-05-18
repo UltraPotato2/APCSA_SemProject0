@@ -15,7 +15,7 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 600x800 cells with a cell size of 1x1 pixels.
         super(600, 800, 1);
         prepare();
     }
@@ -24,17 +24,17 @@ public class MyWorld extends World
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
-    private void prepare()
+    public void prepare()
     {
         Kanagroo kang = new Kanagroo();
         addObject(kang,300, 750);
-        String level = "Level: " + kang.points;
+        String level = "Level: " + kang.getPoints();
         showText(level, 550, 25);
         int y = 700;
         while(y >= 0)
         {
             if(randomInt(0,2) > 0){
-                create((int)(Math.random() * 4), y);
+                create((int)(Math.random() * kang.getPoints()), y); //speed is random upto the current level
                 y-=120;
             }else{
                 y -= 60;
@@ -42,12 +42,12 @@ public class MyWorld extends World
         }
     }
     
-    private void create(int type, int y) //creates a car object
+    public void create(int speed, int y) //creates a car object
     {
         
-            Car car = new Car(type);
+            Enemy enemy = new Enemy(speed);
             int leftRight = (int)(Math.random() * 2) * 580;
-            addObject(car, leftRight, y);
+            addObject(enemy,leftRight, y);
         
     }
     

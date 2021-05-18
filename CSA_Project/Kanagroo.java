@@ -9,12 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Kanagroo extends WorldObject
 {
-    boolean upPressed = false;
-    boolean downPressed = false;
-    boolean rightPressed = false;
-    boolean leftPressed  = false;
+    private boolean upPressed = false;
+    private boolean downPressed = false;
+    private boolean rightPressed = false;
+    private boolean leftPressed  = false;
    
-    int points = 1;
+    private int points = 1;
     /**
      * Act - do whatever the Kanagroo_0 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
