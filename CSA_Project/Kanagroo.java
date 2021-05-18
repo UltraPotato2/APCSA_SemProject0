@@ -9,12 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Kanagroo extends WorldObject
 {
-    boolean upPressed = false;
-    boolean downPressed = false;
-    boolean rightPressed = false;
-    boolean leftPressed  = false;
-    
-    int points = 0;
+    private boolean upPressed = false;
+    private boolean downPressed = false;
+    private boolean rightPressed = false;
+    private boolean leftPressed  = false;
+   
+    private int points = 1;
     /**
      * Act - do whatever the Kanagroo_0 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -22,6 +22,12 @@ public class Kanagroo extends WorldObject
     public void act() 
     {
         move();
+        if(isAtEdge() && getY() == 0)
+        {
+            //change to reset game or go to a launch screen
+            points++;
+            Greenfoot.setWorld(new Part2MyWorld(this));
+        }
     }    
     public int getPoints()
     {

@@ -2,31 +2,30 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class Part2MyWorld here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class Part2MyWorld extends World
 {
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class Part2MyWorld.
      * 
      */
-    public MyWorld()
+    public Part2MyWorld(Kanagroo kang)
     {    
         // Create a new world with 600x800 cells with a cell size of 1x1 pixels.
         super(600, 800, 1);
-        prepare();
+        prepare(kang);
     }
 
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
-    public void prepare()
+    public void prepare(Kanagroo kang)
     {
-        Kanagroo kang = new Kanagroo();
         addObject(kang,300, 750);
         String level = "Level: " + kang.getPoints();
         showText(level, 550, 25);
