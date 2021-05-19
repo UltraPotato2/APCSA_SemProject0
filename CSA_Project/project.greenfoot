@@ -1,6 +1,7 @@
 #Greenfoot project file
 class.Kanagroo.image=kangaroo.png
-class.MyWorld.image=sand.jpg
+class.MyWorld.image=asphalt-road-texture-loop-15392154.jpg
+class.Part2MyWorld.image=asphalt-road-texture-loop-15392154.jpg
 dependency1.from=Part2MyWorld
 dependency1.to=Kanagroo
 dependency1.type=UsesDependency
@@ -81,5 +82,5 @@ target5.y=0
 version=3.0.0
 width=1936
 world.lastInstantiated=MyWorld
-xPosition=0
-yPosition=0
+xPosition=641
+yPosition=354
