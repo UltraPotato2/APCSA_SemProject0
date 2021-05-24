@@ -13,7 +13,6 @@ public class Kanagroo extends WorldObject
     private boolean downPressed = false;
     private boolean rightPressed = false;
     private boolean leftPressed  = false;
-   
     private int points = 1;
     /**
      * Act - do whatever the Kanagroo_0 wants to do. This method is called whenever
@@ -41,22 +40,18 @@ public class Kanagroo extends WorldObject
         if(key != null && key.equals("w")) 
         {
             y -= 30;
-            Greenfoot.playSound("jump.wav");
         }
         if(key != null && key.equals("a"))
         {
             x -= 30;
-            Greenfoot.playSound("jump.wav");
         }
         if(key != null && key.equals("d"))
         {
             x += 30;
-            Greenfoot.playSound("jump.wav");
         }
         if(key != null && key.equals("s"))
         {
             y += 30;
-            Greenfoot.playSound("jump.wav");
         }
         setLocation(x,y);
     }
