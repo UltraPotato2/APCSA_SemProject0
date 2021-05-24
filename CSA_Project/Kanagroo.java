@@ -38,10 +38,26 @@ public class Kanagroo extends WorldObject
         int y = getY();
         int x = getX();
         String key = Greenfoot.getKey();
-        if(key != null && key.equals("w")) y -= 30;
-        if(key != null && key.equals("a"))x -= 30;
-        if(key != null && key.equals("d"))x += 30;
-        if(key != null && key.equals("s"))y += 30;
+        if(key != null && key.equals("w")) 
+        {
+            y -= 30;
+            Greenfoot.playSound("jump.wav");
+        }
+        if(key != null && key.equals("a"))
+        {
+            x -= 30;
+            Greenfoot.playSound("jump.wav");
+        }
+        if(key != null && key.equals("d"))
+        {
+            x += 30;
+            Greenfoot.playSound("jump.wav");
+        }
+        if(key != null && key.equals("s"))
+        {
+            y += 30;
+            Greenfoot.playSound("jump.wav");
+        }
         setLocation(x,y);
     }
 }
